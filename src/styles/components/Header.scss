@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+
+.header {
+  height: 95px;
+  padding: 19px 0;
+
+  &__block {
+    @include space-between;
+  }
+
+  &__rigth {
+    @include flex-box;
+    column-gap: 85px;
+  }
+
+  &__telephone, &__email {
+
+    &-top {
+      @include flex-box;
+      column-gap: 10px;
+      justify-content: flex-start;
+    }
+
+    &-link {
+      color: rgba(48, 52, 61, 1);
+    }
+
+    &-text {
+      justify-content: flex-start;
+      color: rgba(247, 171, 66, 1);
+      font-size: 16px;
+    }
+
+  }
+
+  &__cooperation-btn {
+    width: 200px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(247, 171, 66, 1);
+    border: none;
+    border-radius: 3px;
+
+    @include hover {
+      background-color: rgba(48, 52, 61, 1);
+      color: rgba(247, 171, 66, 1);
+    }
+  }
+}
