@@ -1,0 +1,102 @@
+@use "../abstracts" as *;
+
+
+.information {
+  margin-top: 50px;
+
+  &__block {
+    @include space-between;
+    align-items: flex-start;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__person {
+
+    &-img {
+      display: block;
+    }
+  }
+
+  &__ring {
+
+    &-img {
+      position: absolute;
+      top: 140px;
+      left: 300px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 33px;
+  }
+
+  &__list {
+    &-text {
+      font-size: 16px;
+      color: grey;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__button {
+    width: 200px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(247, 171, 66, 1);
+    border: none;
+    border-radius: 3px;
+    margin-top: 50px;
+
+    @include hover {
+      background-color: rgba(48, 52, 61, 1);
+      color: rgba(247, 171, 66, 1);
+    }
+  }
+}
+
+.catalog {
+  margin-top: 50px;
+
+  &__title {
+    text-transform: uppercase;
+    color: var(--global-title-color);
+    letter-spacing: 3px;
+  }
+
+  &__card {
+
+    &-list {
+      margin-top: 25px;
+      @include space-between;
+
+    }
+
+    &-title {
+      text-transform: uppercase;
+      color: var(--global-title-color);
+      margin: 25px 0 9px;
+    }
+
+    &-description {
+      color: var(--global-color-gray);
+    }
+
+    &:last-child {
+      position: relative;
+    }
+
+    &-logo {
+      position: absolute;
+      z-index: -1;
+      transform: translate(126px, -689px);
+    }
+  }
+}
