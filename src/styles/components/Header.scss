@@ -6,11 +6,19 @@
 
   &__block {
     @include space-between;
+//
+    @include media("desktop-my") {
+//      @include flex-box;
+    }
   }
 
   &__rigth {
     @include flex-box;
     column-gap: 85px;
+
+    @include media("desktop-my") {
+      column-gap: 50px;
+    }
   }
 
   &__telephone, &__email {

@@ -1,0 +1,26 @@
+
+@use 'sass:map';
+
+$breakpoints: (
+  'mobile-s': 320px,
+  'mobile-m': 375px,
+  'mobile-l': 425px,
+  'mobile-x': 475px,
+  'phablet': 600px,
+  'tablet': 768px,
+  'tablet-x': 850px,
+  'laptop': 1024px,
+  'desktop': 1200px,
+  'desktop-my': 1366px
+);
+
+@mixin media($breakpoint) {
+  $size: map.get($breakpoints, $breakpoint);
+  @if $size {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Нет такого брейкпоинта: `#{$breakpoint}`.";
+  }
+}

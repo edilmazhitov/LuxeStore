@@ -7,11 +7,16 @@
     @include space-between;
     height: 60px;
     padding: 18px 0;
+
    }
 
   &__list {
     @include flex-box;
     column-gap: 56px;
+
+    @include media("desktop-my") {
+      column-gap: 40px;
+    }
   }
 
   &__link {

@@ -33,7 +33,7 @@ const Home = () => {
             </div>
             <div className="infortation__rigth">
               <h1 className="information__title">
-                Кольцо из Белого <br/>
+                Кольцо из Белого <br />
                 золота с бриллиантами
               </h1>
               <ul className="information__list">
@@ -77,7 +77,7 @@ const Home = () => {
               />
               <h3 className="catalog__card-title">Кольцы</h3>
               <p className="catalog__card-description">
-                Медиаплан продуцирует нестандартный <br/>
+                Медиаплан продуцирует нестандартный <br />
                 подход. Наряду с этим, анализ рыночных
               </p>
             </li>
@@ -137,10 +137,81 @@ const Home = () => {
           </ul>
         </div>
       </section>
+      <section className="interesting">
+        <div className="container">
+          <h2 className="interesting__title">
+            Вам будет интересно
+          </h2>
+          <Card />
 
-      <div className="container">
-        <Card/>
-      </div>
+          <p className="interesting__text">
+            Стратегическое планирование тормозит культурный департамент маркетинга и продаж, учитывая <br />
+            современные тенденции. Ретроконверсия национального наследия интегрирована. Исходя из <br />
+            структуры пирамиды Маслоу, лидерство в продажах решительно изменяет ребрендинг.
+          </p>
+        </div>
+      </section>
+      <section className="company">
+        <div className="container">
+          <h2 className="company__title">О компании</h2>
+          <div className="company__block">
+            <div className="company__left">
+              <ul className="company__list">
+                <li className="company__list-item">
+                  <div className="company__icon">
+                    <img
+                      src="./icons/company-icon1.png"
+                      alt=""
+                      width="47"
+                      height="51"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 className="company__subtitle">Собственное <br /> производство
+                  </h3>
+                </li>
+                <li className="company__list-item">
+                  <div className="company__icon">
+                    <img
+                      src="./icons/company-icon2.png"
+                      alt="Ускоренная доставка"
+                      width="54"
+                      height="34"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 className="company__subtitle">Ускоренная <br /> доставка
+                  </h3>
+                </li>
+                <li className="company__list-item">
+                  <div className="company__icon">
+                    <img
+                      className="company__image"
+                      src="./icons/company-icon3.png"
+                      alt="Собственное производство"
+                      width="39"
+                      height="50"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 className="company__subtitle">Собственное <br /> производство
+                  </h3>
+                </li>
+              </ul>
+            </div>
+            <div className="company__right">
+              <img
+                className="company__image"
+                src="./information-company-image.png"
+                alt=""
+                width="656"
+                height="656"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 };
