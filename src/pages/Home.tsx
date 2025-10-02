@@ -4,6 +4,7 @@ import catalogImgOne from "../assets/CatalogImage1.png"
 import catalogImgTwo from "../assets/CatalogImage2.png"
 import catalogImgTree from "../assets/CatalogImage3.png"
 import catalogImgFour from "../assets/CatalogImage4.png"
+import { Card } from "../components/Card.tsx";
 
 
 const Home = () => {
@@ -120,7 +121,7 @@ const Home = () => {
                 loading="lazy"
               />
               <h3 className="catalog__card-title">Серьги</h3>
-              <p className="catalog__card-descrition">
+              <p className="catalog__card-description">
                 Медиаплан продуцирует нестандартный <br />
                 подход. Наряду с этим, анализ рыночных
               </p>
@@ -136,6 +137,10 @@ const Home = () => {
           </ul>
         </div>
       </section>
+
+      <div className="container">
+        <Card/>
+      </div>
     </main>
   );
 };

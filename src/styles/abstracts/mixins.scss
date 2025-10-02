@@ -13,9 +13,9 @@
 
 @mixin hover {
   @media (hover: hover) and (pointer: fine) {
-    transition: 0.5s;
+    transition: 0.5s all;
     &:hover {
-      transition: 0.5s;
+      transition: 0.5s all;
       @content;
     }
   }
