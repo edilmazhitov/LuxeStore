@@ -1,5 +1,4 @@
-@use "../abstracts" as *;
-
+@use '../abstracts' as *;
 
 .information {
   margin-top: 50px;
@@ -14,20 +13,16 @@
   }
 
   &__person {
-
     &-img {
       display: block;
     }
   }
 
   &__ring {
-
     &-img {
       position: absolute;
       top: 140px;
       left: 300px;
-
-
     }
   }
 
@@ -36,7 +31,7 @@
     letter-spacing: 3px;
     font-size: 33px;
 
-    @include media("desktop-my") {
+    @include media('desktop-my') {
       font-size: 28px;
     }
   }
@@ -77,19 +72,17 @@
   }
 
   &__card {
-
     &-list {
       margin-top: 25px;
       @include space-between;
 
-      @include media("desktop-my") {
+      @include media('desktop-my') {
         padding: 0 20px;
       }
-
     }
 
     &-image {
-      @include media("desktop-my") {
+      @include media('desktop-my') {
         width: 280px;
         height: 400px;
       }
@@ -104,7 +97,7 @@
     &-description {
       color: var(--global-color-gray);
 
-      @include media("desktop-my") {
+      @include media('desktop-my') {
         font-size: 14px;
       }
     }
@@ -118,7 +111,7 @@
       z-index: -1;
       transform: translate(126px, -689px);
 
-      @include media("desktop-my") {
+      @include media('desktop-my') {
         transform: translate(50px, -600px);
         width: 270px;
       }

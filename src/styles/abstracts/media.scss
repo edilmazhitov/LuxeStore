@@ -1,4 +1,3 @@
-
 @use 'sass:map';
 
 $breakpoints: (
@@ -11,7 +10,7 @@ $breakpoints: (
   'tablet-x': 850px,
   'laptop': 1024px,
   'desktop': 1200px,
-  'desktop-my': 1366px
+  'desktop-my': 1366px,
 );
 
 @mixin media($breakpoint) {

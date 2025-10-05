@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .navigation-bar {
   background-color: rgba(238, 241, 245, 0.82);
@@ -7,14 +7,13 @@
     @include space-between;
     height: 60px;
     padding: 18px 0;
-
-   }
+  }
 
   &__list {
     @include flex-box;
     column-gap: 56px;
 
-    @include media("desktop-my") {
+    @include media('desktop-my') {
       column-gap: 40px;
     }
   }
@@ -32,7 +31,7 @@
   }
 
   &__basket {
-    color: rgba(48,52,61,1);
+    color: rgba(48, 52, 61, 1);
 
     @include flex-box;
     column-gap: 14px;

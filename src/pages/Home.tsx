@@ -1,11 +1,10 @@
-import Person from "../assets/Person.png"
+import Person from '../assets/Person.png'
 
-import catalogImgOne from "../assets/CatalogImage1.png"
-import catalogImgTwo from "../assets/CatalogImage2.png"
-import catalogImgTree from "../assets/CatalogImage3.png"
-import catalogImgFour from "../assets/CatalogImage4.png"
-import { Card } from "../components/Card.tsx";
-
+import catalogImgOne from '../assets/CatalogImage1.png'
+import catalogImgTwo from '../assets/CatalogImage2.png'
+import catalogImgTree from '../assets/CatalogImage3.png'
+import catalogImgFour from '../assets/CatalogImage4.png'
+import { Card } from '../components/Card.tsx'
 
 const Home = () => {
   return (
@@ -39,32 +38,32 @@ const Home = () => {
               <ul className="information__list">
                 <li className="information__list-item">
                   <p className="information__list-text">
-                    Материал.................................Красное золото 585 пробы
+                    Материал.................................Красное золото 585
+                    пробы
                   </p>
                 </li>
                 <li className="information__list-item">
                   <p className="information__list-text">
-                    Примерный вес........................................................0.86 г
+                    Примерный
+                    вес........................................................0.86
+                    г
                   </p>
                 </li>
                 <li className="information__list-item">
                   <p className="information__list-text">
-                    Вставка................................Бриллиант (23 шт, 0.069 карат)
+                    Вставка................................Бриллиант (23 шт,
+                    0.069 карат)
                   </p>
                 </li>
               </ul>
-              <button className="information__button">
-                Подробнее
-              </button>
+              <button className="information__button">Подробнее</button>
             </div>
           </div>
         </div>
       </section>
       <section className="catalog">
         <div className="container">
-          <h2 className="catalog__title">
-            Каталог
-          </h2>
+          <h2 className="catalog__title">Каталог</h2>
           <ul className="catalog__card-list">
             <li className="catalog__card-list-item">
               <img
@@ -139,15 +138,16 @@ const Home = () => {
       </section>
       <section className="interesting">
         <div className="container">
-          <h2 className="interesting__title">
-            Вам будет интересно
-          </h2>
+          <h2 className="interesting__title">Вам будет интересно</h2>
           <Card />
 
           <p className="interesting__text">
-            Стратегическое планирование тормозит культурный департамент маркетинга и продаж, учитывая <br />
-            современные тенденции. Ретроконверсия национального наследия интегрирована. Исходя из <br />
-            структуры пирамиды Маслоу, лидерство в продажах решительно изменяет ребрендинг.
+            Стратегическое планирование тормозит культурный департамент
+            маркетинга и продаж, учитывая <br />
+            современные тенденции. Ретроконверсия национального наследия
+            интегрирована. Исходя из <br />
+            структуры пирамиды Маслоу, лидерство в продажах решительно изменяет
+            ребрендинг.
           </p>
         </div>
       </section>
@@ -167,7 +167,8 @@ const Home = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="company__subtitle">Собственное <br /> производство
+                  <h3 className="company__subtitle">
+                    Собственное <br /> производство
                   </h3>
                 </li>
                 <li className="company__list-item">
@@ -180,7 +181,8 @@ const Home = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="company__subtitle">Ускоренная <br /> доставка
+                  <h3 className="company__subtitle">
+                    Ускоренная <br /> доставка
                   </h3>
                 </li>
                 <li className="company__list-item">
@@ -194,7 +196,8 @@ const Home = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="company__subtitle">Собственное <br /> производство
+                  <h3 className="company__subtitle">
+                    Собственное <br /> производство
                   </h3>
                 </li>
               </ul>
@@ -211,10 +214,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
     </main>
-  );
-};
+  )
+}
 
-
-export default Home;
+export default Home

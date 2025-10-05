@@ -1,22 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 type NavListType = {
-  to: string,
+  to: string
   content: string
 }
 
-export   const navList: NavListType[] = [
-  {to: "/", content: "Главная"},
-  {to: "/", content: "Католог"},
-  {to: "/", content: "О компании"},
-  {to: "/", content: "Контакты"}
+export const navList: NavListType[] = [
+  { to: '/', content: 'Главная' },
+  { to: '/', content: 'Католог' },
+  { to: '/', content: 'О компании' },
+  { to: '/', content: 'Контакты' },
 ]
 
-
 const Footer = () => {
-
-
-
   return (
     <footer className="footer">
       <div className="container">
@@ -31,19 +27,13 @@ const Footer = () => {
           />
           <nav className="footer__nav">
             <ul className="footer__nav-list">
-              {
-                navList.map((item) => (
-                  <li
-                    key={item.content}
-                    className="footer__nav-item"
-                  >
-                    <Link
-                      to={item.to}
-                      className="footer__nav-link"
-                    >{item.content}</Link>
-                  </li>
-                ))
-              }
+              {navList.map((item) => (
+                <li key={item.content} className="footer__nav-item">
+                  <Link to={item.to} className="footer__nav-link">
+                    {item.content}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
           <div className="footer__telephone">
@@ -60,10 +50,9 @@ const Footer = () => {
                   fill="#757C82"
                 />
               </svg>
-              <Link
-                to="tel:88001111111"
-                className="footer__telephone-link"
-              >8 800 111-11-11</Link>
+              <Link to="tel:88001111111" className="footer__telephone-link">
+                8 800 111-11-11
+              </Link>
             </div>
             <p className="footer__telephone-text">с 9:00 - до 18:00</p>
           </div>
@@ -71,13 +60,8 @@ const Footer = () => {
         </div>
         <div className="footer__line" />
         <div className="footer__bottom">
-          <h2 className="footer__case">
-            © Bassco 2022
-          </h2>
-          <Link
-            className="footer__political-link"
-            to="/"
-          >
+          <h2 className="footer__case">© Bassco 2022</h2>
+          <Link className="footer__political-link" to="/">
             Политика конфиденциальности
           </Link>
         </div>

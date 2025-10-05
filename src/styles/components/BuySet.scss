@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.buy-set {
+  margin: 55px 0 21px;
+
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--global-title-color);
+    margin-bottom: 21px;
+  }
+
+  &__block {
+    @include flex-box;
+    column-gap: 52px;
+  }
+
+  &__left {
+    @include flex-box;
+    column-gap: 16px;
+  }
+
+  &__plus {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  &__image {
+    width: 117px;
+    height: 117px;
+    border: 1px solid var(--global-title-color);
+  }
+
+  &__button {
+    width: 251px;
+    height: 52px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    background-color: var(--global-color-gray-2);
+    color: var(--global-title-color);
+
+    @include hover {
+      background-color: var(--global-title-color);
+      color: var(--global-color-gray-2);
+    }
+  }
+}

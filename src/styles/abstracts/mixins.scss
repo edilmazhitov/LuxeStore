@@ -10,7 +10,6 @@
   display: flex;
 }
 
-
 @mixin hover {
   @media (hover: hover) and (pointer: fine) {
     transition: 0.5s all;

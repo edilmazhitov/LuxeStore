@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const Header = () => {
-
   return (
     <header className="header">
       <div className="container">
@@ -31,7 +30,9 @@ const Header = () => {
                     fill="#757C82"
                   />
                 </svg>
-                <Link to="tel:88001111111" className="header__telephone-link">8 800 111-11-11</Link>
+                <Link to="tel:88001111111" className="header__telephone-link">
+                  8 800 111-11-11
+                </Link>
               </div>
               <p className="header__telephone-text">Заказать звонок</p>
             </div>
@@ -49,7 +50,9 @@ const Header = () => {
                     fill="#757C82"
                   />
                 </svg>
-                <Link to="" className="header__email-link">info@bassco.ru</Link>
+                <Link to="" className="header__email-link">
+                  info@bassco.ru
+                </Link>
               </div>
               <p className="header__email-text">По любым вопросам</p>
             </div>
@@ -58,7 +61,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
 export default Header

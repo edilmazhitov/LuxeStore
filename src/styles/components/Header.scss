@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 .header {
   height: 95px;
@@ -6,20 +6,19 @@
 
   &__block {
     @include space-between;
-
   }
 
   &__rigth {
     @include flex-box;
     column-gap: 85px;
 
-    @include media("desktop-my") {
+    @include media('desktop-my') {
       column-gap: 50px;
     }
   }
 
-  &__telephone, &__email {
-
+  &__telephone,
+  &__email {
     &-top {
       @include flex-box;
       column-gap: 10px;
@@ -35,7 +34,6 @@
       color: var(--link-color);
       font-size: 16px;
     }
-
   }
 
   &__cooperation-btn {
