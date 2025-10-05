@@ -17,6 +17,8 @@ const NavigationBar = () => {
     {to: "/", content: "Контакты"}
   ]
 
+
+
   return (
     <div className="navigation-bar">
       <div className="container">

@@ -6,10 +6,7 @@
 
   &__block {
     @include space-between;
-//
-    @include media("desktop-my") {
-//      @include flex-box;
-    }
+
   }
 
   &__rigth {
@@ -35,7 +32,7 @@
 
     &-text {
       justify-content: flex-start;
-      color: rgba(247, 171, 66, 1);
+      color: var(--link-color);
       font-size: 16px;
     }
 
@@ -48,13 +45,13 @@
     font-weight: 500;
     color: white;
     text-transform: uppercase;
-    background: rgba(247, 171, 66, 1);
+    background: var(--link-color);
     border: none;
     border-radius: 3px;
 
     @include hover {
       background-color: rgba(48, 52, 61, 1);
-      color: rgba(247, 171, 66, 1);
+      color: var(--link-color);
     }
   }
 }
