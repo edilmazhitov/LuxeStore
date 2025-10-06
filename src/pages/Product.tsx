@@ -1,3 +1,4 @@
+import Company from '../components/Company.tsx'
 import OneProduct from '../components/OneProduct.tsx'
 
 const Product = () => {
@@ -6,6 +7,7 @@ const Product = () => {
       <div className="container">
         <OneProduct />
       </div>
+      <Company />
     </main>
   )
 }

@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+.company {
+  padding-bottom: 40px;
+
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 62px;
+    color: var(--global-title-color);
+  }
+
+  &__block {
+    @include space-between;
+  }
+  &__text {
+    font-size: 16px;
+    color: var(--global-color-gray);
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 32px;
+    margin-top: 64px;
+
+    &-item {
+      display: flex;
+      column-gap: 18px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--global-title-color);
+  }
+
+  &__icon {
+    width: 77px;
+    height: 77px;
+    border: 1px solid var(--global-color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
