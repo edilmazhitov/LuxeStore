@@ -1,0 +1,44 @@
+    @use "../abstracts" as *;
+
+    .information-box {
+        @include space-between;
+        margin-bottom: 88px;
+
+
+        &.revers {
+            flex-direction: row-reverse;
+        }
+
+        &__title {
+            font-size: 24px;
+            color: var(--global-color-title);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+        }
+        
+        &__text {
+            color: var(--global-color-gray);
+            font-size: 16px;
+            margin-top: 29px;
+        }
+
+        &__list {
+            margin-top: 45px;
+
+        
+
+            &-item {
+                justify-content: flex-start;
+                align-items: center;
+                display: flex;
+
+                margin-bottom: 16px;
+
+                svg {
+                    margin-right: 18px;
+                    color: var(--link-color);
+                }
+            }
+        }
+    }

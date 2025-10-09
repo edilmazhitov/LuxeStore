@@ -10,7 +10,7 @@ const NavigationBar = () => {
   const navList: NavListType[] = [
     { to: '/', content: 'Главная' },
     { to: '/', content: 'Католог' },
-    { to: '/', content: 'О компании' },
+    { to: '/about-us', content: 'О компании' },
     { to: '/', content: 'Контакты' },
   ]
 

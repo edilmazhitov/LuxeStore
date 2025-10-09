@@ -1,9 +1,14 @@
-const Company = () => {
+import cn from "classnames"
+
+const Company = ({revers}) => {
+
   return (
     <section className="company">
       <div className="container">
         <h2 className="company__title">О компании</h2>
-        <div className="company__block">
+        <div className={cn("company__block", {
+          "revers": revers
+        })}>
           <div className="company__left">
             <p className="company__text">
               Согласно ставшей уже классической работе Филипа Котлера,

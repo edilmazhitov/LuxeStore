@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Root from '../Root/Root'
 import Home from '../pages/Home'
 import Product from '../pages/Product'
+import AboutUs from '../pages/AboutUs'
 
 const routes: RouteObject[] = [
   {
@@ -17,6 +18,10 @@ const routes: RouteObject[] = [
         path: 'product',
         element: <Product />,
       },
+      {
+        path: 'about-us',
+        element: <AboutUs />
+      }
     ],
   },
 ]
